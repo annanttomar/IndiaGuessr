@@ -1,0 +1,20 @@
+:root{
+  --bg:#071026; --muted:#9aa7bf;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#071026,#07162a);color:#e6eef8}
+.container{display:flex;flex-direction:column;min-height:100vh;padding:12px;gap:12px}
+header{display:flex;justify-content:space-between;align-items:center}
+h1{margin:0;font-size:18px}
+.scoreboard{font-size:14px;color:var(--muted);display:flex;gap:12px}
+main{display:flex;gap:12px;flex:1;min-height:0}
+#map{flex:1;border-radius:10px;overflow:hidden;box-shadow:0 8px 30px rgba(2,6,23,0.6);height:calc(100vh - 170px)}
+.panel{width:320px;padding:16px;border-radius:10px;background:rgba(255,255,255,0.02);display:flex;flex-direction:column;gap:12px;border:1px solid rgba(255,255,255,0.04)}
+label{font-size:13px;color:var(--muted)}
+select{padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.buttons{display:flex;gap:8px}
+button{padding:10px 12px;border-radius:8px;border:none;background:linear-gradient(90deg,#1f2937,#111827);color:#e6eef8;cursor:pointer;font-weight:600}
+button:disabled{opacity:0.45;cursor:not-allowed}
+.result{min-height:70px;padding:10px;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted)}
+.hint{font-size:12px;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:6px}

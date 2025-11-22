@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IndiaGuessr — States (Simplified Polygons)</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>IndiaGuessr — States (Simplified)</h1>
+      <div class="scoreboard">
+        <div>Round: <span id="round">0</span>/5</div>
+        <div>Score: <span id="score">0</span></div>
+      </div>
+    </header>
+
+    <main>
+      <div id="map"></div>
+
+      <aside class="panel">
+        <label for="stateSelect">Pick a state</label>
+        <select id="stateSelect"></select>
+
+        <div class="buttons">
+          <button id="guessBtn">Guess</button>
+          <button id="revealBtn">Reveal</button>
+          <button id="nextBtn" disabled>Next</button>
+        </div>
+
+        <div id="result" class="result"></div>
+        <div class="hint">This demo uses simplified circular polygons for each state around its centroid. It guarantees points are generated inside the chosen state's polygon.</div>
+      </aside>
+    </main>
+
+    <footer>
+      Built with Leaflet • Simplified-state polygons (for demo)
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
